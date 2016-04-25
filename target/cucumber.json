@@ -1,0 +1,354 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# feature/US1.feature"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 15719994,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepsDef.before(Scenario)"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Deposit money into account",
+        "description": "",
+        "id": "us1;deposit-money-into-account",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 249068176,
+              "error_message": "java.lang.Exception: not found account\n\tat application.impl.ServiceAccountImpl.findAccount(ServiceAccountImpl.java:34)\n\tat steps.StepsDef.an_existing_client_with_id(StepsDef.java:43)\n\tat ✽.Given an existing client with id \"ID0s\"(US1.feature:7)\n",
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "an existing client with id \"ID0s\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ID0s",
+                  "offset": 28
+                }
+              ],
+              "location": "StepsDef.an_existing_client_with_id(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "the client deposits \"100\" EUR into her account",
+            "match": {
+              "arguments": [
+                {
+                  "val": "100",
+                  "offset": 21
+                }
+              ],
+              "location": "StepsDef.the_client_deposits_EUR_into_her_account(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "the new balance is \"100\" EUR",
+            "match": {
+              "arguments": [
+                {
+                  "val": "100",
+                  "offset": 20
+                }
+              ],
+              "location": "StepsDef.the_new_balance_is_EUR(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "US1",
+    "description": "In order to save money\r\nAs a bank client\r\nI want to make a deposit in my account",
+    "id": "us1",
+    "keyword": "Feature",
+    "uri": "US1.feature"
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# feature/US2.feature"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 503548,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepsDef.before(Scenario)"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "make a withdrawal from my account",
+        "description": "",
+        "id": "us2;make-a-withdrawal-from-my-account",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 153059,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "an existing client with id \"ID02\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ID02",
+                  "offset": 28
+                }
+              ],
+              "location": "StepsDef.an_existing_client_with_id(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 442629,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the client withdraws \"500\" EUR into her account",
+            "match": {
+              "arguments": [
+                {
+                  "val": "500",
+                  "offset": 22
+                }
+              ],
+              "location": "StepsDef.the_client_withdraws_EUR_into_her_account(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 48830734,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the new balance is \"-500\" EUR",
+            "match": {
+              "arguments": [
+                {
+                  "val": "-500",
+                  "offset": 20
+                }
+              ],
+              "location": "StepsDef.the_new_balance_is_EUR(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "US2",
+    "description": "In order to retrieve some or all of my savings\r\nAs a bank client\r\nI want to make a withdrawal from my account",
+    "id": "us2",
+    "keyword": "Feature",
+    "uri": "US2.feature"
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# feature/US3.feature"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 166425,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepsDef.before(Scenario)"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "history of my operations",
+        "description": "",
+        "id": "us3;history-of-my-operations",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 79263,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "an existing client with id \"ID03\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ID03",
+                  "offset": 28
+                }
+              ],
+              "location": "StepsDef.an_existing_client_with_id(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2958504,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the client deposits \"500\" EUR into her account in date \"01/02/2016\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "500",
+                  "offset": 21
+                },
+                {
+                  "val": "01/02/2016",
+                  "offset": 56
+                }
+              ],
+              "location": "StepsDef.the_client_deposits_EUR_into_her_account_in_date(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 753185,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the client deposits \"500\" EUR into her account in date \"10/02/2016\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "500",
+                  "offset": 21
+                },
+                {
+                  "val": "10/02/2016",
+                  "offset": 56
+                }
+              ],
+              "location": "StepsDef.the_client_deposits_EUR_into_her_account_in_date(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5821538,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the client withdraws \"300\" EUR into her account in date \"20/02/2016\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "300",
+                  "offset": 22
+                },
+                {
+                  "val": "20/02/2016",
+                  "offset": 57
+                }
+              ],
+              "location": "StepsDef.the_client_withdraws_EUR_into_her_account_in_date(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1273055,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the client withdraws \"200\" EUR into her account in date \"20/02/2016\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 22
+                },
+                {
+                  "val": "20/02/2016",
+                  "offset": 57
+                }
+              ],
+              "location": "StepsDef.the_client_withdraws_EUR_into_her_account_in_date(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 72070,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "client check her account",
+            "match": {
+              "location": "StepsDef.client_check_her_account()"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "History of operations : ",
+              "date       | credit   | debit    | balance\n01/02/2016 | 500,00   |          | 500,00\n10/02/2016 | 500,00   |          | 1000,00\n20/02/2016 |          | 300,00   | 700,00\n20/02/2016 |          | 200,00   | 500,00\n"
+            ],
+            "result": {
+              "duration": 8964558,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "generate the history of opertions",
+            "match": {
+              "location": "StepsDef.generate_the_history_of_opertions()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "US3",
+    "description": "In order to check my operations\r\nAs a bank client\r\nI want to see the history (operation, date, amount, balance)  of my operations",
+    "id": "us3",
+    "keyword": "Feature",
+    "uri": "US3.feature"
+  }
+]

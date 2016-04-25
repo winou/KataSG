@@ -1,0 +1,11 @@
+domain/model/StatementLine.class
+domain/model/IrepositoryAccount.class
+application/util/DateCreator.class
+application/impl/ServiceAccountImpl.class
+domain/model/Transaction.class
+domain/model/RepositoryAccountImpl.class
+domain/model/Statement.class
+domain/model/Amount.class
+domain/model/Account.class
+domain/service/IserviceAccount.class
+domain/model/StartApp.class

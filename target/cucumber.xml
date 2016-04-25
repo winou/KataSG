@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="0.334807">
+<testcase classname="US1" name="Deposit money into account" time="0.264788">
+<failure message="java.lang.Exception: not found account&#10;&#9;at application.impl.ServiceAccountImpl.findAccount(ServiceAccountImpl.java:34)&#10;&#9;at steps.StepsDef.an_existing_client_with_id(StepsDef.java:43)&#10;&#9;at ✽.Given an existing client with id &quot;ID0s&quot;(US1.feature:7)&#10;"><![CDATA[Given an existing client with id "ID0s".....................................failed
+When the client deposits "100" EUR into her account.........................skipped
+Then the new balance is "100" EUR...........................................skipped
+
+StackTrace:
+java.lang.Exception: not found account
+	at application.impl.ServiceAccountImpl.findAccount(ServiceAccountImpl.java:34)
+	at steps.StepsDef.an_existing_client_with_id(StepsDef.java:43)
+	at ✽.Given an existing client with id "ID0s"(US1.feature:7)
+]]></failure>
+</testcase>
+<testcase classname="US2" name="make a withdrawal from my account" time="0.04993">
+<system-out><![CDATA[Given an existing client with id "ID02".....................................passed
+When the client withdraws "500" EUR into her account........................passed
+Then the new balance is "-500" EUR..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US3" name="history of my operations" time="0.020089">
+<system-out><![CDATA[Given an existing client with id "ID03".....................................passed
+And the client deposits "500" EUR into her account in date "01/02/2016".....passed
+And the client deposits "500" EUR into her account in date "10/02/2016".....passed
+And the client withdraws "300" EUR into her account in date "20/02/2016"....passed
+And the client withdraws "200" EUR into her account in date "20/02/2016"....passed
+When client check her account...............................................passed
+Then generate the history of opertions......................................passed
+]]></system-out>
+</testcase>
+</testsuite>
